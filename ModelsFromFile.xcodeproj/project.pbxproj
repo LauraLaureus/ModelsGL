@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		274AAD281CC4CADB000EF09A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274AAD271CC4CADB000EF09A /* main.cpp */; };
+		274AAD3B1CC4CF96000EF09A /* Model_PLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274AAD351CC4CF96000EF09A /* Model_PLY.cpp */; };
+		274AAD3D1CC4D236000EF09A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274AAD3C1CC4D236000EF09A /* OpenGL.framework */; };
+		274AAD3F1CC4D23C000EF09A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274AAD3E1CC4D23C000EF09A /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,16 @@
 /* Begin PBXFileReference section */
 		274AAD241CC4CADB000EF09A /* ModelsFromFile */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ModelsFromFile; sourceTree = BUILT_PRODUCTS_DIR; };
 		274AAD271CC4CADB000EF09A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		274AAD2E1CC4CDFF000EF09A /* Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main.h; sourceTree = "<group>"; };
+		274AAD2F1CC4CF96000EF09A /* bun_zipper.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bun_zipper.ply; sourceTree = "<group>"; };
+		274AAD301CC4CF96000EF09A /* cow.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cow.ply; sourceTree = "<group>"; };
+		274AAD321CC4CF96000EF09A /* Model_PLY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model_PLY.h; sourceTree = "<group>"; };
+		274AAD331CC4CF96000EF09A /* turbine.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turbine.ply; sourceTree = "<group>"; };
+		274AAD351CC4CF96000EF09A /* Model_PLY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model_PLY.cpp; sourceTree = "<group>"; };
+		274AAD371CC4CF96000EF09A /* street_lamp.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = street_lamp.ply; sourceTree = "<group>"; };
+		274AAD381CC4CF96000EF09A /* sandal.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sandal.ply; sourceTree = "<group>"; };
+		274AAD3C1CC4D236000EF09A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		274AAD3E1CC4D23C000EF09A /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274AAD3F1CC4D23C000EF09A /* GLUT.framework in Frameworks */,
+				274AAD3D1CC4D236000EF09A /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +56,8 @@
 		274AAD1B1CC4CADB000EF09A = {
 			isa = PBXGroup;
 			children = (
+				274AAD3E1CC4D23C000EF09A /* GLUT.framework */,
+				274AAD3C1CC4D236000EF09A /* OpenGL.framework */,
 				274AAD261CC4CADB000EF09A /* ModelsFromFile */,
 				274AAD251CC4CADB000EF09A /* Products */,
 			);
@@ -57,7 +74,15 @@
 		274AAD261CC4CADB000EF09A /* ModelsFromFile */ = {
 			isa = PBXGroup;
 			children = (
+				274AAD2F1CC4CF96000EF09A /* bun_zipper.ply */,
+				274AAD301CC4CF96000EF09A /* cow.ply */,
+				274AAD321CC4CF96000EF09A /* Model_PLY.h */,
+				274AAD331CC4CF96000EF09A /* turbine.ply */,
+				274AAD351CC4CF96000EF09A /* Model_PLY.cpp */,
+				274AAD371CC4CF96000EF09A /* street_lamp.ply */,
+				274AAD381CC4CF96000EF09A /* sandal.ply */,
 				274AAD271CC4CADB000EF09A /* main.cpp */,
+				274AAD2E1CC4CDFF000EF09A /* Main.h */,
 			);
 			path = ModelsFromFile;
 			sourceTree = "<group>";
@@ -119,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				274AAD281CC4CADB000EF09A /* main.cpp in Sources */,
+				274AAD3B1CC4CF96000EF09A /* Model_PLY.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
