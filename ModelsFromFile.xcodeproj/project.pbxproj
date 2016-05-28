@@ -11,6 +11,7 @@
 		274AAD3B1CC4CF96000EF09A /* Model_PLY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274AAD351CC4CF96000EF09A /* Model_PLY.cpp */; };
 		274AAD3D1CC4D236000EF09A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274AAD3C1CC4D236000EF09A /* OpenGL.framework */; };
 		274AAD3F1CC4D23C000EF09A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274AAD3E1CC4D23C000EF09A /* GLUT.framework */; };
+		274AAD421CC4D4D5000EF09A /* OBJLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274AAD401CC4D4D5000EF09A /* OBJLoader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,10 @@
 		274AAD381CC4CF96000EF09A /* sandal.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sandal.ply; sourceTree = "<group>"; };
 		274AAD3C1CC4D236000EF09A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		274AAD3E1CC4D23C000EF09A /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		274AAD401CC4D4D5000EF09A /* OBJLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OBJLoader.cpp; sourceTree = "<group>"; };
+		274AAD411CC4D4D5000EF09A /* OBJLoader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OBJLoader.hpp; sourceTree = "<group>"; };
+		274AAD431CC4D68E000EF09A /* diamond.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diamond.obj; sourceTree = "<group>"; };
+		274AAD441CC4D7E4000EF09A /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 		274AAD261CC4CADB000EF09A /* ModelsFromFile */ = {
 			isa = PBXGroup;
 			children = (
+				274AAD441CC4D7E4000EF09A /* teapot.obj */,
 				274AAD2F1CC4CF96000EF09A /* bun_zipper.ply */,
 				274AAD301CC4CF96000EF09A /* cow.ply */,
 				274AAD321CC4CF96000EF09A /* Model_PLY.h */,
@@ -83,6 +89,9 @@
 				274AAD381CC4CF96000EF09A /* sandal.ply */,
 				274AAD271CC4CADB000EF09A /* main.cpp */,
 				274AAD2E1CC4CDFF000EF09A /* Main.h */,
+				274AAD401CC4D4D5000EF09A /* OBJLoader.cpp */,
+				274AAD411CC4D4D5000EF09A /* OBJLoader.hpp */,
+				274AAD431CC4D68E000EF09A /* diamond.obj */,
 			);
 			path = ModelsFromFile;
 			sourceTree = "<group>";
@@ -143,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274AAD421CC4D4D5000EF09A /* OBJLoader.cpp in Sources */,
 				274AAD281CC4CADB000EF09A /* main.cpp in Sources */,
 				274AAD3B1CC4CF96000EF09A /* Model_PLY.cpp in Sources */,
 			);

@@ -5,15 +5,16 @@
 #include <GLUT/GLUT.h>
 #include <OpenGL/OpenGL.h>
 
-#define WINDOW_ANCHO 500
-#define WINDOW_ALTO 500
+#define WINDOW_ANCHO 1000
+#define WINDOW_ALTO 1000
 
 #include "Model_PLY.h"
+#include "OBJLoader.hpp"
 
 // Espacio para las variables globales de la ventana
 float gl_fovy = 60.0f;
 float gl_fovy_min = 10.0f, gl_fovy_max = 90.0f, gl_fovy_paso = 1.0f;
-float gl_cerca=1.0f, gl_lejos=100.0f;
+float gl_cerca=1.0f, gl_lejos=300.0f;
 float gl_center = 7.0f; // centro donde pondremos los objetos
 
 
@@ -21,6 +22,7 @@ float gl_center = 7.0f; // centro donde pondremos los objetos
 double theta = M_PI_2, phi=0.0;
 double radio = 7.0;
 Model_PLY* modelo;
+//Model_OBJ* model;
 
 // Espacio para la declaraciÛn de funciones
 void InitGL();
@@ -45,11 +47,15 @@ int main(int argc, char *argv[]){
     glutSpecialFunc(RuedaRaton);
     
     modelo = new Model_PLY();
-    //modelo->Load("/Users/lala/ModelsFromFile/ModelsFromFile/cow.ply");
+    modelo->Load("/Users/lala/ModelsFromFile/ModelsFromFile/cow.ply");
     //modelo->Load("/Users/lala/ModelsFromFile/ModelsFromFile/bun_zipper.ply");
     //modelo->Load("/Users/lala/ModelsFromFile/ModelsFromFile/turbine.ply");
     //modelo->Load("/Users/lala/ModelsFromFile/ModelsFromFile/street_lamp.ply");
-    modelo->Load("/Users/lala/ModelsFromFile/ModelsFromFile/sandal.ply");
+    //modelo->Load("/Users/lala/ModelsFromFile/ModelsFromFile/sandal.ply");
+    
+    
+    //model = new Model_OBJ();
+    //model->Load("/Users/lala/ModelsFromFile/ModelsFromFile/teapot.obj");
     
     glutMainLoop(); // bucle principal
     
@@ -176,12 +182,13 @@ void Display(){
     // el eje cenital es el Y
     float x = (float)(radio*sin(theta)*sin(phi));
     float y = (float)(radio*cos(theta));
-    float z = (float)(radio*sin(theta)*cos(phi));
+    float z = (float)(radio*sin(theta)*cos(phi))+100;
     gluLookAt(x,y,z,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f); // mira al (0,0,0)
     
     setMaterial();
     // TO DO
     modelo->Draw();
+    //model->Draw();
     
     glFlush(); // actualiza el framebuffer
     glutSwapBuffers(); // en caso de animacion
